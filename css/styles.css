@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --primary: #d96c80;
+  --accent: #bf2a52;
+  --highlight: #f2ae2e;
+  --bg: #fffaeb;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: #222;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  }
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding: 1.1rem;
+    text-align: center;
+}
+
+.title { 
+  background-color: var(--primary);
+  color: white
+}
+header span {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  padding:-0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: var(--accent);
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  background: var(--highlight);
+  color: black;
+}
+
+main {
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 2fr 1fr;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 9px;
+}
+
+.card .title {
+  margin: 0 -1rem 1rem -1rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.profile-pic img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.chile {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.flag {
+  text-align: center;
+}
+
+.flag img {
+  width: 100px;
+  height: auto;
+}
+
+.chilean-flag {
+  font-size: 0.8rem;
+  color: #5a5a5a;
+  margin-top: 0.3rem;
+}
+
+.bootstrap {
+  color: #5a5a5a;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+}
