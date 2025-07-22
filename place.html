@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WDD 131—Dynamic Web Fundamentals—Deilyn Ignacia Cecilia Zamudio Córdova</title>
+    <meta name="description" content="Information about Chile, including data and current weather.">
+    <meta name="author" content="Deilyn Ignacia Cecilia Zamudio Córdova">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!--General and mobile devices-->
+    <link rel="stylesheet" href="styles/place.css">
+    <!--Larger devices only-->
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 800px)"> 
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="chile-title">Chile</h1>
+    </header>
+
+    <main>
+        <picture class="hero-image">
+            <source srcset="images/hero_puma.webp" media="(min-width: 800px)"> 
+            <img src="images/hero_puma_mobile.webp" alt="puma"> 
+        </picture>
+
+        <div class="content-overlay"> 
+            <section class="data">
+                <h2 class="data-title">Data</h2>
+                <ul>
+                    <li>Area: 756,102 km² (291,933 sq mi)</li>
+                    <li>Population: 19.96 million (2023 estimate)</li>
+                    <li>Capital: Santiago</li>
+                    <li>Languages: Spanish (with recognized indigenous languages like Mapudungun, Aymara, Rapa-nui, etc.)</li>
+                    <li>Currency: Chilean Peso (CLP)</li>
+                    <li>Time Zone: UTC-4 (and UTC-3 during daylight saving time in some regions)</li>
+                    <li>Calling Code: +56</li>
+                    <li>Internet TLD: .cl</li>
+                </ul>
+            </section>
+
+            <section class="weather">
+                <h2 class="weather-title">Weather <span class="weather-emoji">⛅</span></h2> 
+                <picture class="weather-icon-mobile">
+                    <img src="images/sun_icon.svg" alt="sun with clouds">
+                </picture>
+                <ul>
+                    <li>Temperature: 22 °C</li>
+                    <li>Conditions: Sunny with scattered clouds</li>
+                    <li>Wind: 10 km/h</li>
+                    <li id="windchill">Wind Chill: N/A</li> 
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>✨Deilyn Zamudio Córdova✨ Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
