@@ -131,6 +131,7 @@ figure.temple p {
 
 footer {
     text-align: center;
+	margin-top: 1rem;
     padding: 1rem;
     background: rgb(0, 0, 0);
     color: white;

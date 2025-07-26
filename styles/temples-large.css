@@ -34,14 +34,7 @@
         flex-direction: row; 
     }
 
-    .navigation a {
-        display: block; 
-    }
-
-    nav ul {
-        flex-direction: row;
-    }
-    nav a {
+        nav a {
         flex: 1 4 100%; 
     }
 }
