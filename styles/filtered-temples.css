@@ -1,3 +1,5 @@
+/* filtered-temples.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,15 +11,17 @@ body {
     margin: 0;
     color: #000000;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background: rgb(0, 0, 0);
     color: white;
-    display: grid;
-    grid-gap: 1rem;
-    padding: 20px; 
-    text-align: center; 
+    display: grid; 
+    padding: 20px;
+    text-align: center;
 }
 
 nav ul {
@@ -36,32 +40,29 @@ nav a {
 }
 
 .active {
-
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
 }
 
 h1 {
     text-align: left;
-    font-size: 1.5rem; 
-    padding-top: 0.7rem; 
-    margin-left: 0.6rem;
+    font-size: 1.5rem;
+
 }
 
 h2 {
-    font-size: 1.2rem;
-    text-align: left;
-    margin: 1rem;
+    font-size: larger;
+    text-align: center;
 }
 
-/* mobile */
+/* Mobile */
 #menu {
     font-size: 1.5rem;
-    border: 0;
     background: none;
     color: white;
     position: absolute;
     top: 1rem;
     right: 1rem;
+    padding: 0.5rem;
 }
 
 #menu::before {
@@ -69,7 +70,7 @@ h2 {
 }
 
 #menu.open::before {
-    content: "🅧";
+    content: "x";
 }
 
 .navigation {
@@ -95,43 +96,53 @@ h2 {
 
 .open a {
     display: block;
-}
+} 
 
 main {
+    flex-grow: 1;
     max-width: 380px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
-.temple {
-   font-weight: 700;
-   margin-bottom: 1rem;
-   text-align: center;
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem; 
+    padding: 1rem;
 }
 
-figure.temple {
-   margin: 0;
-   padding: 0;
+.temple-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-img {
-   display: block;
-   width: 100%;
-   height: auto;
-   margin: 0;
-   padding: 0.6rem;
-   box-sizing: border-box;
+.temple-card p {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: #282828;
+    width: 100%;
+    padding: 0 0.5rem;
 }
 
-figure.temple p {
-   margin-bottom: 1rem;
-   padding: 0 0.5rem;
-   font-size: small;
-   text-align: left;
+.temple-card img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 1rem 0 0;
+    border-radius: 4px;
 }
 
 footer {
     text-align: center;
-	margin-top: 1rem;
+    margin-top: 1rem;
     padding: 1rem;
     background: rgb(0, 0, 0);
     color: white;

@@ -12,9 +12,10 @@
     padding-top: 0.7rem; 
 	}
 	
-	.album {
+	.res-grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr; 
+		gap: 1.5rem;
 		max-width: 96%;
         margin: 0 auto;
 	}
@@ -23,18 +24,26 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 10px 20px;
     }
 
     #menu {
-        display: none;
+        display: none; 
     }
 
     .navigation {
         display: flex; 
         flex-direction: row; 
+        gap: 1rem;
     }
 
-        nav a {
-        flex: 1 4 100%; 
+    .navigation a {
+        display: block; 
+        padding: 0.6rem 1rem;
+    }
+
+    .navigation a:hover {
+        background-color: rgb(32, 37, 41);
+        font-weight: 700;
     }
 }
