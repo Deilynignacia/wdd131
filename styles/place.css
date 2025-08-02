@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #4A3024; 
+    --color-light: #f3f3f3;
+    --color-text: #262626;
+
+    --font-family-base: 'Open Sans', sans-serif; 
+}
+
+body {
+    font-family: var(--font-family-base); 
+    background-color: var(--color-light);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-dark);
+    padding: 1rem; 
+    text-align: center; 
+}
+
+.chile-title { 
+    color: var(--color-light); 
+    font-size: 2rem;
+    margin: 0;
+    text-align: center; 
+}
+
+h2 {
+    color: var(--color-dark);
+    font-weight: 600; 
+    font-size: 1.5rem;
+    padding: 0 1.5rem 0.5rem 1.5rem; 
+    display: flex; 
+    align-items: center;
+    gap: 0.5rem;
+}
+
+main {
+    max-width: 90%; 
+    margin: 2rem auto;
+    padding: 0; 
+    display: flex; 
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero-image {
+    width: 100%; 
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+.content-overlay {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.data, .weather {
+    background-color: var(--color-light);
+    color: var(--color-text);
+    padding: 1.5rem; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.data ul, .weather ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.data li, .weather li {
+    margin-bottom: 0.5rem;
+}
+
+/* Weather Icon*/
+.weather-icon-mobile {
+    display: block; 
+    width: 60px; 
+    height: auto;
+    margin: 0 auto 1rem auto; 
+}
+.weather-icon-mobile img {
+    width: 100%;
+    height: auto;
+}
+
+.weather-emoji {
+    display: none; 
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--color-light); 
+    background-color: var(--color-dark); 
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
