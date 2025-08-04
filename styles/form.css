@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: #000000;
+    background-color: rgb(173, 161, 175);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: rgb(56, 29, 65);
+    color: white;
+    display: grid; 
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Mobile */
+main {
+    max-width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productName-label {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.productName-label,
+.productName-select {
+    display: block;
+}
+
+.productName-select {
+    margin-bottom: 1rem;
+}
+
+.rating {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+label[for="installDate"],
+#installDate,
+fieldset {
+  display: block;
+  margin-bottom: 15px;
+}
+
+legend {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.checkbox-option + .checkbox-option {
+    margin-top: 10px;
+}
+
+/* Esto hace que el label de la fecha y el campo de fecha estén en su propia línea */
+label[for="installDate"],
+#installDate {
+  display: block;
+  margin-bottom: 10px; /* Agrega un espacio después */
+}
+
+/* Y esto hace que el legend de los checkboxes esté en su propia línea */
+fieldset legend {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+fieldset div {
+  margin-bottom: 5px;
+}
+
+label.writtenReview,
+label[for="name"],
+textarea,
+input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 10px 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+textarea,
+input[type="text"] {
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2e022d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgb(56, 29, 65);
+    color: white;
+}
+
+footer::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 0.5rem auto 0 auto;
+}

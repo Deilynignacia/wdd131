@@ -1,0 +1,21 @@
+/* Larger Views */
+@media (min-width: 740px) {
+    
+	main {
+		max-width: 100%;
+	}
+
+	h1 {
+	text-align: center;
+	font-size: 1.5rem; 
+	margin-left: 1.7rem;
+    padding-top: 0.7rem; 
+	}
+	
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+}
