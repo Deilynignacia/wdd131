@@ -1,22 +1,3 @@
-// Menu
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
-
-// Footer
-const currentYearSpan = document.getElementById('currentyear');
-const today = new Date();
-const currentYear = today.getFullYear();
-currentYearSpan.textContent = currentYear;
-
-const lastModifiedParagraph = document.getElementById('lastModified');
-const lastModifiedDate = document.lastModified; 
-lastModifiedParagraph.textContent = `Last Modified: ${lastModifiedDate}`;
-
 // Product Array
 const products = [
   {
@@ -45,3 +26,23 @@ const products = [
     averagerating: 5.0
   }
 ];
+
+const productSelect = document.getElementById("productName");
+
+products.forEach(product => {
+  const option = document.createElement("option");
+  option.value = product.id;         
+  option.textContent = product.name; 
+  productSelect.appendChild(option);
+});
+
+
+// Footer
+const currentYearSpan = document.getElementById('currentyear');
+const today = new Date();
+const currentYear = today.getFullYear();
+currentYearSpan.textContent = currentYear;
+
+const lastModifiedParagraph = document.getElementById('lastModified');
+const lastModifiedDate = document.lastModified; 
+lastModifiedParagraph.textContent = `Last Modified: ${lastModifiedDate}`;
