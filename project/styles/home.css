@@ -1,0 +1,232 @@
+main {
+    max-width: 100%;
+    background-color: var(--text-color-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* HERO SECTION */
+.hero-content {
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+
+.hero-content img:first-of-type {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    display: block;
+    height: 90%;
+}
+
+.hero-content img:last-of-type {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 90%;
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 26%;
+    left: 15%;
+    background-color: rgba(81, 0, 0, 0.95);
+    color: var(--text-color-light);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #920000;
+    transform: scale(1.2);
+}
+
+/* CARDS */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    background-color: var(--text-color-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-family: "Playfair Display", serif;
+}
+
+.card-body p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color-dark);
+}
+
+/* DATES */
+.key-dates {
+    text-align: center;
+}
+
+.key-dates h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.date-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.date-card, .info-card {
+    background-color: var(--text-color-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.date-card:hover, .info-card:hover {
+    transform: translateY(-5px);
+}
+
+.date-card h3, .info-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.date-card p, .info-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color-dark);
+}
+
+.date-card .button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.date-card .button:hover {
+    background-color: #920000;
+    transform: scale(1.1);
+}
+
+.info-card .address {
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    color: var(--text-color-dark);
+}
+
+/* SUBSCRIBE */
+.subscribe-section {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.subscribe-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subscribe-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: var(--text-color-light);
+    margin-bottom: 0.5rem;
+}
+
+.subscribe-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.subscribe-content form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.subscribe-content input[type="email"] {
+    flex-grow: 1;
+    min-width: 250px;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.subscribe-content button[type="submit"] {
+    background-color: transparent;
+    color: var(--text-color-light);
+    border: 2px solid var(--text-color-light);
+    padding: 0.75rem 2rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-content button[type="submit"]:hover {
+    background-color: var(--text-color-light);
+    color: var(--primary-color);
+}
