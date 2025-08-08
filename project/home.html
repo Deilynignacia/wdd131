@@ -15,99 +15,104 @@
     <link rel="stylesheet" href="styles/main.css">
     
     <link rel="stylesheet" href="styles/home.css">
+
+    <script src="scripts/menu.js" defer></script>
+
 </head>
-    <header>
-        <div class="logo">
-            <a href="home.html">
-                <img src="images/logo.png" alt="The Musical Logo">
-                <h1>A Christmas Carol: The Musical</h1>
-            </a>
-        </div>
-        <nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">
+    <body>
+        <header>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo.png" alt="The Musical Logo">
+                    <h1>A Christmas Carol: The Musical</h1>
+                </a>
+            </div>
+            <nav>
+            <button id="menu" class="menu-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links">
+            <ul class="nav-links navigation">
                 <li><a href="home.html">HOME</a></li>
-                <li><a href="about.html">CAST & CREATIVE</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="schedule.html">SCHEDULE</a></li>
                 <li><a href="form.html">REGISTER</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <img src="images/hero-golden.png" alt="A Christmas Carol: The Musical">
-                <img src="images/title.png" alt="Title">
-                <a href="#" class="hero-button">Get on Stage!</a>
-            </div>
-        </section>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <img src="images/hero-golden.png" alt="A Christmas Carol: The Musical">
+                    <img src="images/title.png" alt="Title">
+                    <a href="#" class="hero-button">Get on Stage!</a>
+                </div>
+            </section>
 
-        <section class="card-container">
-            <div class="card">
-                <a href="dickens.html">
-                    <img src="images/charles-dickens1.png" class="card-img-top" alt="Charles Dickens">
-                    <div class="card-body">
-                        <h3>Dickens's Classic Tale</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="card">
-                <a href="christmas.html">
-                    <img src="images/christmas.jpeg" class="card-img-top" alt="Why do we celebrate Christmas">
-                    <div class="card-body">
-                        <h3>Why do we celebrate Christmas</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="card">
-                <a href="institute.html">
-                    <img src="images/quilpue.jpeg" class="card-img-top" alt="Quilpué Institute students picture">
-                    <div class="card-body">
-                        <h3>Quilpué Institute</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
+            <section class="card-container">
+                <div class="card">
+                    <a href="dickens.html">
+                        <img src="images/charles-dickens1.png" class="card-img-top" alt="Charles Dickens">
+                        <div class="card-body">
+                            <h3>Dickens's Classic Tale</h3>
+                            <p class="card-text">Dickens's message is as relevant today as it was in 1843. It teaches us that no matter how lost we might feel or how far from the light, there is always a way. </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="christmas.html">
+                        <img src="images/christmas.jpeg" class="card-img-top" alt="Why do we celebrate Christmas">
+                        <div class="card-body">
+                            <h3>Why do we celebrate Christmas</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="institute.html">
+                        <img src="images/quilpue.jpeg" class="card-img-top" alt="Quilpué Institute students picture">
+                        <div class="card-body">
+                            <h3>Quilpué Institute</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
-        <section class="key-dates">
-            <h2>Key Dates & Information</h2>
-            <div class="date-card">
-                <h3>Audition Registration</h3>
-                <p>Registration for artists interested in participating is open now.</p>
-                <a href="registration.html" class="button">Register Now</a>
-            </div>
-            <div class="date-card">
-                <h3>Performances</h3>
-                <p>This December at various Church's facilities across the Valparaíso region, Chile.</p>
-                <a href="schedule.html" class="button">View Schedule</a>
-            </div>
-            <div class="info-card">
-                <h3>Venue</h3>
-                <p>Quilpué Institute of Religion, of The Church of Jesus Christ of Latter-day Saints</p>
-                <p class="address">Aníbal Pinto 858, Quilpué, Valparaíso Region, Chile.</p>
-            </div>
-        </section>
+            <section class="key-dates">
+                <h2>Key Dates & Information</h2>
+                <div class="date-card">
+                    <h3>Audition Registration</h3>
+                    <p>Registration for artists interested in participating is open now.</p>
+                    <a href="registration.html" class="button">Register Now</a>
+                </div>
+                <div class="date-card">
+                    <h3>Performances</h3>
+                    <p>This December at various Church's facilities across the Valparaíso region, Chile.</p>
+                    <a href="schedule.html" class="button">View Schedule</a>
+                </div>
+                <div class="info-card">
+                    <h3>Venue</h3>
+                    <p>Quilpué Institute of Religion, of The Church of Jesus Christ of Latter-day Saints</p>
+                    <p class="address">Aníbal Pinto 858, Quilpué, Valparaíso Region, Chile.</p>
+                </div>
+            </section>
 
-        <section class="subscribe-section">
-            <div class="subscribe-content">
-                <h2>Subscribe for News and Updates</h2>
-                <p>Receive the latest news about the production, dates, and exclusive content directly in your inbox.</p>
-                <form action="#" method="post">
-                    <input type="email" name="email" placeholder="Email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>A Christmas Carol: The Musical. © 2025. Produced by the Quilpué Institute of Religion of The Church of Jesus Christ of Latter-day Saints.</p>
-    </footer>
+            <section class="subscribe-section">
+                <div class="subscribe-content">
+                    <h2>Subscribe for News and Updates</h2>
+                    <p>Receive the latest news about the production, dates, and exclusive content directly in your inbox.</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>A Christmas Carol: The Musical. © 2025. Produced by the Quilpué Institute of Religion of The Church of Jesus Christ of Latter-day Saints.</p>
+        </footer>  
+    </body>
 </html>
