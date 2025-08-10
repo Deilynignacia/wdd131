@@ -161,3 +161,63 @@ footer p {
         padding: 0;
     }
 }
+
+/* SUBSCRIBE */
+.subscribe-section {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.subscribe-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subscribe-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: var(--text-color-light);
+    margin-bottom: 0.5rem;
+}
+
+.subscribe-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.subscribe-content form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.subscribe-content input[type="email"] {
+    flex-grow: 1;
+    min-width: 250px;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.subscribe-content button[type="submit"] {
+    background-color: transparent;
+    color: var(--text-color-light);
+    border: 2px solid var(--text-color-light);
+    padding: 0.75rem 2rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-content button[type="submit"]:hover {
+    background-color: var(--text-color-light);
+    color: var(--primary-color);
+}

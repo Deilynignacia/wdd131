@@ -17,36 +17,39 @@
     <link rel="stylesheet" href="styles/form.css">
 
     <script src="scripts/menu.js" defer></script>
+
+    <script src="scripts/form.js" defer></script>
+
+    <script src="scripts/auditions-submitted.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="home.html">
-                <img src="images/logo.png" alt="The Musical Logo">
-                <h1>A Christmas Carol: The Musical</h1>
-            </a>
-        </div>
-        <nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">
+        <header>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo.png" alt="The Musical Logo">
+                    <h1>A Christmas Carol: The Musical</h1>
+                </a>
+            </div>
+            <nav>
+            <button id="menu" class="menu-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links">
+            <ul class="nav-links navigation">
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="news.html">NEWS</a></li>
-                <li><a href="schedule.html">SCHEDULE</a></li>
                 <li><a href="form.html">REGISTER</a></li>
             </ul>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
     <main>
-        <form method="get" action="auditions-submitted.html">
+        <form method="POST" action="https://formspree.io/f/manbajjy">
 
             <h2>Join Our Cast!</h2>
-            <p>Sign Up for Auditions for A Christmas Carol: The Musical</p>
+            <p>Sign Up to Audition for A Christmas Carol: The Musical</p>
 
             <fieldset class="contact-info">
                 <legend>Personal Information</legend>
@@ -67,30 +70,8 @@
             <fieldset class="audition-interests">
                 <legend>In which areas would you like to participate?</legend>
                 <p>You may select more than one option, but the final assignment of roles will be determined during the audition process.</p>
-                <div>
-                    <input type="checkbox" id="acting" name="auditionArea" value="acting">
-                    <label for="acting">Acting</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="singing" name="auditionArea" value="singing">
-                    <label for="singing">Singing (Solo)</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="dancing" name="auditionArea" value="dancing">
-                    <label for="dancing">Dancing</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ensemble-choir" name="auditionArea" value="ensemble-choir">
-                    <label for="ensemble-choir">Ensemble (choir)</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ensemble-dance" name="auditionArea" value="ensemble-dance">
-                    <label for="ensemble-dance">Ensemble (dance)</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="crew" name="auditionArea" value="crew">
-                    <label for="crew">Production Crew (costumes, set design, etc.)</label>
-                </div>
+                <div id="audition-options">
+                    </div>
             </fieldset>
 
             <label for="experience">Do you have any previous experience? Tell us about it! (optional):</label>
