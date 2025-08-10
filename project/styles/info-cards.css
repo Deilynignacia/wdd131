@@ -37,7 +37,6 @@ p {
     border-left: 5px solid var(--accent-color);
     background-color: #f5f5f5;
     font-style: italic;
-    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -95,8 +94,7 @@ p {
     overflow-x: auto;
     padding-bottom: 1rem;
     scrollbar-width: thin;
-    scrollbar-color: var(--primary-color) #f1f1f1;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-color: var(--primary-color);
 }
 
 .horizontal-gallery-container figure {
@@ -137,12 +135,14 @@ p {
     background: #f1f1f1;
 }
 
+/* VIDEO */
 .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* MAP */
 .map-container {
     display: flex;
     justify-content: center;

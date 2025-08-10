@@ -66,6 +66,7 @@ header h1 {
     font-size: 1rem;
     margin: 0;
     color: var(--text-color-light);
+    display: none;
 }
 
 header nav {
@@ -148,18 +149,9 @@ footer p {
     display: flex;
 }
 
-@media screen and (min-width: 800px) {
-    .menu-toggle {
-        display: none;
-    }
-
-    .navigation {
-        display: flex !important;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 0;
-    }
+a {
+    color: var(--text-color-light);
+    text-decoration: none;
 }
 
 /* SUBSCRIBE */
@@ -220,4 +212,22 @@ footer p {
 .subscribe-content button[type="submit"]:hover {
     background-color: var(--text-color-light);
     color: var(--primary-color);
+}
+
+@media screen and (min-width: 800px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+    }
+
+    header h1 {
+        display: block;
+    }
 }
