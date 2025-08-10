@@ -193,12 +193,17 @@ ul {
     color: var(--text-color-dark);
 }
 
-/* DESKTOP */
+/* LARGER */
 @media screen and (min-width: 800px) {
     .card-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 2rem;
+    }
+
+    .card-body p {
+        padding: 0;
+        text-align: left;
     }
 
     h2 {
@@ -231,4 +236,9 @@ ul {
         padding: 0 8rem;
         margin-bottom: 1.5rem;
     }
+}
+
+img {
+    height: auto;
+    width: auto;
 }

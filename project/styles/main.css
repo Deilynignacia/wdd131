@@ -214,13 +214,14 @@ a {
     color: var(--primary-color);
 }
 
+/* LARGER */
 @media screen and (min-width: 800px) {
     .menu-toggle {
         display: none;
     }
 
     .navigation {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
@@ -230,4 +231,9 @@ a {
     header h1 {
         display: block;
     }
+}
+
+img {
+    height: auto;
+    width: auto;
 }

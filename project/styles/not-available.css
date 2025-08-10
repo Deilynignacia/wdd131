@@ -48,3 +48,8 @@ p {
     padding: 0 1rem;
     text-align: center;
 }
+
+img {
+    height: auto;
+    width: auto;
+}
