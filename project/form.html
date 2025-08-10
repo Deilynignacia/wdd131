@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAST & CREATIVE | A Christmas Carol: The Musical.</title>
+    <title>REGISTER FOR AUDITIONS | A Christmas Carol: The Musical</title>
     
-    <meta name="description" content="A website planning document for 'A Christmas Carol: The Musical.' This document outlines the site's purpose, color scheme, typography and layout.">
+    <meta name="description" content="Sign up to audition for 'A Christmas Carol: The Musical'. Fill out this form to join our cast and crew.">
     <meta name="author" content="Deilyn Ignacia Cecilia Zamudio Córdova">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="styles/main.css">
     
     <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/menu.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,7 +34,7 @@
             </button>
             <ul class="nav-links">
                 <li><a href="home.html">HOME</a></li>
-                <li><a href="about.html">CAST & CREATIVE</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="schedule.html">SCHEDULE</a></li>
                 <li><a href="form.html">REGISTER</a></li>
@@ -41,8 +43,62 @@
     </header>
 
     <main>
-        </main>
-    
+        <form method="get" action="auditions-submitted.html">
+
+            <h2>Join Our Cast!</h2>
+            <p>Sign Up for Auditions for A Christmas Carol: The Musical</p>
+
+            <fieldset class="contact-info">
+                <legend>Personal Information</legend>
+                
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="birthDate">Date of Birth:</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+            </fieldset>
+
+            <fieldset class="audition-interests">
+                <legend>In which areas would you like to participate?</legend>
+                <p>You may select more than one option, but the final assignment of roles will be determined during the audition process.</p>
+                <div>
+                    <input type="checkbox" id="acting" name="auditionArea" value="acting">
+                    <label for="acting">Acting</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="singing" name="auditionArea" value="singing">
+                    <label for="singing">Singing (Solo)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="dancing" name="auditionArea" value="dancing">
+                    <label for="dancing">Dancing</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ensemble-choir" name="auditionArea" value="ensemble-choir">
+                    <label for="ensemble-choir">Ensemble (choir)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ensemble-dance" name="auditionArea" value="ensemble-dance">
+                    <label for="ensemble-dance">Ensemble (dance)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="crew" name="auditionArea" value="crew">
+                    <label for="crew">Production Crew (costumes, set design, etc.)</label>
+                </div>
+            </fieldset>
+
+            <label for="experience">Do you have any previous experience? Tell us about it! (optional):</label>
+            <textarea id="experience" name="experience" rows="5"></textarea>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </main>    
     <footer>
         <p>A Christmas Carol: The Musical. © 2025. Produced by the Quilpué Institute of Religion of The Church of Jesus Christ of Latter-day Saints.</p>
     </footer>

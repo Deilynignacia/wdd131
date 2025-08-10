@@ -15,36 +15,71 @@
     <link rel="stylesheet" href="styles/main.css">
     
     <link rel="stylesheet" href="styles/news.css">
+
+    <script src="scripts/menu.js" defer></script>
+
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="home.html">
-                <img src="images/logo.png" alt="The Musical Logo">
-                <h1>A Christmas Carol: The Musical</h1>
-            </a>
-        </div>
-        <nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">
+        <header>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo.png" alt="The Musical Logo">
+                    <h1>A Christmas Carol: The Musical</h1>
+                </a>
+            </div>
+            <nav>
+            <button id="menu" class="menu-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links">
+            <ul class="nav-links navigation">
                 <li><a href="home.html">HOME</a></li>
-                <li><a href="about.html">CAST & CREATIVE</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="news.html">NEWS</a></li>
-                <li><a href="schedule.html">SCHEDULE</a></li>
                 <li><a href="form.html">REGISTER</a></li>
             </ul>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
     <main>
-        </main>
+            <section class="hero">
+                <div class="hero-content">
+                    <img src="images/news.png" alt="A Christmas Carol: The Musical">
+                </div>
+            </section>
+
+        <section class="news-feed">
+            <h2>In the Loop</h2>
+            <div class="news-grid">
+
+                <article class="news-card">
+                    <img src="images/audition.jpg" alt="Audition room">
+                    <div class="news-card-content">
+                        <span class="news-date">August 25th, 2025</span>
+                        <h3>Auditions for A Christmas Carol Are Open!</h3>
+                        <p>Check out the details on how to audition and the available roles...</p>                        
+                        <a href="#" class="read-more-button">Read more</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="images/interview.jpeg" alt="Interview">
+                    <div class="news-card-content">
+                        <span class="news-date">September 8th, 2025</span>
+                        <h3>An interview with our Institute Director</h3>
+                        <p>Why are the arts relevant to bring the students together?</p>                        
+                        <a href="#" class="read-more-button">Read more</a>
+                    </div>
+                </article>
+
+                </div>
+        </section>
+    </main>
     
     <footer>
-        <p>A Christmas Carol: The Musical. © 2025. Produced by the Quilpué Institute of Religion of The Church of Jesus Christ of Latter-day Saints.</p>
+            <p>A Christmas Carol: The Musical. © 2025.</p>
+            <p> Produced by the Quilpué Institute of Religion of The Church of Jesus Christ of Latter-day Saints.</p>
     </footer>
 </body>
 </html>

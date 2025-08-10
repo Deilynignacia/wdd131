@@ -113,7 +113,7 @@ footer p {
     font-weight: normal;
 }
 
-/* MENU TOGGLE BUTTON - Estilo hamburguesa */
+/* MENU */
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -135,7 +135,7 @@ footer p {
     border-radius: 2px;
 }
 
-/* NAVIGATION MOBILE - OCULTO POR DEFECTO */
+/* NAVIGATION MOBILE */
 .navigation {
     display: none;
     flex-direction: column;
@@ -144,12 +144,10 @@ footer p {
     padding: 1rem 0;
 }
 
-/* NAVIGATION VISIBLE CUANDO SE ABRE */
 .navigation.open {
     display: flex;
 }
 
-/* DESKTOP NAVIGATION */
 @media screen and (min-width: 800px) {
     .menu-toggle {
         display: none;

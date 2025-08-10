@@ -1,9 +1,7 @@
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 0;
-    background-color: var(--background-color);
-    color: var(--text-color-dark);
+    max-width: 100%;
+    background-color: var(--text-color-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -52,3 +50,4 @@ li {
     padding: 0 2rem;
     margin-bottom: 1.5rem;
 }
+
